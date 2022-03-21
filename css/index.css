@@ -1,0 +1,107 @@
+html{
+    background: linear-gradient(to bottom, #45484D 0%, #000000 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+#calculadora,
+#texto{
+    margin-top: 90px;
+    width: 300px;
+    height: 530px;
+    /* margin: auto; */
+    
+}
+#calculadora{
+    background-color:#282927 ;
+}
+#pantalla,
+#pantallaTex{
+    width: 90%;
+    height: 90px;
+    font-size: 40px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 6px;
+    color: white;
+    text-align: right;
+    background: transparent;
+    font-size: 40px;
+}
+#pantallaTex h4{
+    margin-top: 50px;
+    font-size: 20px ;
+}
+
+#keypad{
+    margin-top: 30px;
+}
+.btn{
+    background-color: #5d5d5c;
+    width: 75px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    border: 0;
+    font-weight: 300px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    color: white;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    opacity: 0.5;
+}
+.btn-orange{
+    background-color: #ff940e;
+}
+.btn-double{
+    width: 225px;
+}
+.nombre{
+    background-color: greenyellow;
+    color: black;
+}
+.nombre:hover{
+    cursor: no-drop;
+    background-color: aquamarine;
+}
+#aplicaciones{
+    display: flex;
+    justify-content: center;
+    
+}
+#texto{
+    margin-left: 30px;
+    background-color: #5d5d5c;
+}
+
+#botones{
+    margin-top: 30px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.entrada{
+    padding: 20px;
+    width: 85%;
+    border: none;
+    background-color: #ff940e;
+    color: white;
+}
+
+#botones button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    border: none;
+    background-color: greenyellow;
+}
