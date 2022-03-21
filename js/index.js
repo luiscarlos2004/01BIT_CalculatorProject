@@ -133,51 +133,59 @@ function operando(operacion){
     for(let i = 0; i <= operacion.length; i++){
         if(operacion[i] == "+"){
             resultado = parseInt(numero1) + parseInt(numero2);
-            var mensaje =  `${numero1} + ${numero2} = ${resultado}`
+            var mensaje =  `${numero1} + ${numero2} = ${resultado}`;
             if(isNaN(resultado)){
-                invalido()
+                invalido();
                 apagar();
             }else{
                 pantallaOp.innerHTML = resultado;
                 apagar();
-                historial(mensaje)
+                historial(mensaje);
             }
 
         }else if(operacion[i] == "-"){
             resultado = parseInt(numero1) - parseInt(numero2);
+            var mensaje =  `${numero1} - ${numero2} = ${resultado}`;
             if(isNaN(resultado)){
                 invalido()
                 apagar();
             }else{
                 pantallaOp.innerHTML = resultado;
                 apagar();
+                historial(mensaje);
             }
         }else if(operacion[i] == "*"){
             resultado = parseInt(numero1) * parseInt(numero2);
+            var mensaje =  `${numero1} * ${numero2} = ${resultado}`;
             if(isNaN(resultado)){
-                invalido()
+                invalido();
                 apagar();
             }else{
                 pantallaOp.innerHTML = resultado;
                 apagar();
+                historial(mensaje);
             }
         }else if(operacion[i] == "/"){
            resultado = parseInt(numero1) / parseInt(numero2);
+           var mensaje =  `${numero1} / ${numero2} = ${resultado}`;
            if(isNaN(resultado)){
             invalido()
             apagar();
         }else{
             pantallaOp.innerHTML = resultado;
             apagar();
+            historial(mensaje);
         }
         }else if(operacion[i] == "%"){
             resultado = (parseInt(numero1) * parseInt(numero2)) / 100;
+            var mensaje =  `${numero1} % ${numero2} = ${resultado}`
             if(isNaN(resultado)){
                 invalido()
                 apagar();
             }else{
                 pantallaOp.innerHTML = resultado;
                 apagar();
+                historial(mensaje);
             }
          }
     }
